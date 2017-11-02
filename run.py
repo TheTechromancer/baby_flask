@@ -25,7 +25,7 @@ app = Flask(__name__)
 # the <variable> part is passed as a keyword argument to the function
 # e.g., username='ObiWanKenobi'
 @app.route('/')
-def hello_world():
+def hello_there():
 
 	# returns the message we want to display in the user's browser
 	return 'Hello there.'
