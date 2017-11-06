@@ -42,3 +42,6 @@ def home():
 def admin():
 
 	return "Admin page"
+
+if __name__ == '__main__':
+	app.run()

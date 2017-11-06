@@ -1,3 +1,4 @@
-import baby_flask
+from baby_flask.app import app
 
-baby_flask.app.run()
+if __name__ == '__main__':
+	app.run()
