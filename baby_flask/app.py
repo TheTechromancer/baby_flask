@@ -10,6 +10,8 @@ app = Flask(__name__, instance_relative_config=True)
 app.config.from_object('config')	# load /config.py
 app.config.from_pyfile('config.py') # overwrite with instance/config.py if it exists
 
+app_name = "Baby Flask"
+
 
 # the route() decorator tells Flask which URL should trigger the function
 # but there is more to it!  You can make certain parts of the URL dynamic
@@ -41,7 +43,7 @@ def home():
 @app.route('/admin/')
 def admin():
 
-	return "Admin page"
+	return render_template('admin.html')
 
 if __name__ == '__main__':
 	app.run()
