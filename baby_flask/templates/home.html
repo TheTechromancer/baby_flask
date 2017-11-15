@@ -4,8 +4,12 @@
 {% block title %}Baby Flask{% endblock %}
 
 {% block body %}
-	<div class="jumbotron text-center">
-		<h1>Baby Flask</h1>
-		<p class="lead">A Simple Web App for Learning Flask</p>
+	<div style="background:transparent" class="jumbotron text-center">
+		<h2 style="color:#eee">A Random Art</h2>
+		<p style="color:#bbb" class="lead">From (somewhat) biased sources</p>
 	</div>
+	<div style="padding: 0 0 100px 0" class="container text-center">
+		<img style="width:auto;max-width:100%;max-height:800px;box-shadow:0 0 50px 25px #000" class="img-responsive center-block" src="{{ rand_art }}"
+	</div>
+	
 {% endblock %}
